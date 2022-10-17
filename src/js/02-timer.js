@@ -1,5 +1,7 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import 'notiflix/dist/notiflix-3.2.5.min.css';
 
 
 const DELAY_MS = 1000;
@@ -43,6 +45,7 @@ function ticTimer() {
 }
 
 function onBtnClick() {
+
   intervalId = setInterval(() => {
     ticTimer();
   }, DELAY_MS);
